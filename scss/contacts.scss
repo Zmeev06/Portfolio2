@@ -1,0 +1,81 @@
+.contacts {
+    background-color: $bg_block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 762px;
+
+    &__text {
+        text-align: center;
+    }
+
+    &__formblock {
+        margin-top: 65px;
+    }
+
+    &__text-block {
+        text-align: center;
+
+    }
+
+    &__content {
+        width: 540px;
+        margin: 0 auto;
+    }
+}
+
+// .cocntacts {
+
+//     &__form {
+//     }
+// }
+.form {
+
+    &__name-email {
+        display: flex;
+        justify-content: space-between;
+        width: 540px;
+    }
+
+    &__name {
+        display: block;
+        width: 235px;
+        height: 50px;
+        padding-left: 20px;
+        @include text(#5F5D5D, 14px);
+        font-family: Roboto;
+    }
+
+    &__email {
+        display: block;
+        width: 235px;
+        height: 50px;
+        padding-left: 20px;
+        @include text(#5F5D5D, 14px);
+        font-family: Roboto;
+
+    }
+
+    &__message {
+        width: 520px;
+        height: 158px;
+        margin-top: 20px;
+        resize: none;
+        padding-top: 17px;
+        padding-left: 20px;
+        @include text(#5F5D5D, 14px);
+        font-family: Roboto;
+    }
+
+    &__btn {
+        display: block;
+        background-color: $bg_block_2;
+        width: 190px;
+        height: 55px;
+        font-family: Roboto;
+        @include text(#fff, 14px);
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+}

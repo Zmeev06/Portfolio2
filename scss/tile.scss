@@ -1,0 +1,21 @@
+
+.grid-item {
+    width: 25%;
+}
+
+
+.tile {
+    margin-top: 28px;
+    &__img {
+        width: 100%;
+        // &:hover {
+            
+        // }
+    }
+}
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2 50%);
+}
+

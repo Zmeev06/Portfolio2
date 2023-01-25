@@ -1,0 +1,19 @@
+.process {
+    background-color: $bg_block;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+
+    &__youtube {
+        width: 1110px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+}
+
+.process-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 540px;
+}

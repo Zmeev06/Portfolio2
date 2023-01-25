@@ -1,0 +1,102 @@
+.title {
+    @include text(#000, 32px);
+    font-family: Roboto;
+    margin: 0 auto;
+}
+
+.text {
+    width: 540px;
+        font-family: Roboto;
+        @include text(#727272, 16px);
+        margin: 60px auto;
+
+}
+
+
+
+button {
+    transition-duration: 0.5s;
+        &:hover {
+            background-color: rgb(8, 175, 197);
+            box-shadow: 0 0 7px 2px rgba(8, 175, 197, 0.87);
+            transform: translateY(-10px) scale(1.02);
+        }   
+}
+
+
+.header__burger {
+    display: none;
+}
+
+.header {
+    background-color: $bg_block;
+
+    &__img {
+        width: 357px;
+    }
+
+    &__title {
+        @include text(#000, 48px);
+        font-family: Roboto;
+        margin: 0 auto;
+    }
+
+    &__btn {
+        background-color: #34547A;
+        font-family: Roboto;
+        width: 225px;
+        height: 65px;
+        @include text(#fff, 16px);
+        
+    }
+}
+.header-container {
+    width: 1113px;
+    padding-top: 57px;
+    margin: $center;
+}
+.nav {
+    align-items: center;
+    margin-bottom: 80px;
+    padding-bottom: 80px;
+    @extend %flex;
+    width: 1113px;
+    padding-top: 57px;
+    margin: $center;
+    &__item {
+        font-family: $main_ff;
+        @include text(#000, 16px);
+        text-transform: uppercase;
+       
+        >a {
+            color: #000;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size .3s;
+            cursor: pointer;           
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+}
+.logo {
+    font-family: Revalia;
+    @include text(#34547A, 48px);
+}
+.nav-bar {
+    @extend %flex;
+    width: 611px
+}
+.header-content {
+    @extend %flex;
+    margin: $center;
+    width: 1028px;
+    padding-bottom: 146px;
+}
+.header-in-content {
+    width: 541px;
+    
+}

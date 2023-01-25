@@ -1,0 +1,16 @@
+.grid-item {
+  width: 25%;
+}
+
+.tile {
+  margin-top: 28px;
+}
+.tile__img {
+  width: 100%;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2 50%);
+}

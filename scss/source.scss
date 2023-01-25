@@ -1,0 +1,17 @@
+//Переменные
+$bg_block:#EEEFF1;
+$main_ff:Roboto;
+$main_text_color: #727272;
+$bg_block_2: #34547A;
+$center: 0 auto;
+
+@mixin text ($col, $fz) {
+    color: $col;
+    font-size: $fz;
+}
+
+%flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
